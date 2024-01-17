@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+</head>
+<body>
+    <h1>Github Repositories</h1>
+    <div id="loader"></div>
+
+    <div id="search-container">
+        <label for="username">GitHub Username:</label>
+        <input type="text" id="username" placeholder="Enter GitHub username">
+        <input type="text" id="search" placeholder="Search Repositories" oninput="filterRepositories()">
+        <button onclick="searchUser()">Search</button>
+    </div>
+
+    <div id="user-info">
+        <img src="" alt="Profile Image" id="profile-image">
+        <div id="profile-details">
+            <h2></h2>
+            <p id="user-location"></p>
+            <p id="user-bio"></p>
+        </div>
+    </div>
+
+    <div id="repositories"></div>
+    
+    <div id="pagination">
+        <label for="perPage">Repositories per page:</label>
+        <select id="perPage" onchange="getRepositories()">
+            <option value="10">10</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <button onclick="goToPage('prev')" id="prevBtn" disabled>Previous</button>
+        <span>Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+        <button onclick="goToPage('next')" id="nextBtn" disabled>Next</button>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
