@@ -36,8 +36,8 @@ function getUserInfo() {
                 <img src="${data.avatar_url}" alt="Profile Image" id="profile-image">
                 <div id="profile-details">
                     <h2>${data.name}</h2>
-                    <p id="user-location">Location: ${data.location}</p>
                     <p id="user-bio">${data.bio}</p>
+                    <p id="user-location"><b>Location:</b> ${data.location}</p>
                 </div>
             `;
         })
