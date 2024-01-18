@@ -8,10 +8,12 @@ Open your terminal and run the following command to clone the repository to your
 
 **2. Open the Project Folder:**<br/>
 Navigate to the project folder using the following command:
+
 `cd GitRepo`
 
 **3. Open the HTML File:**<br/>
 Navigate to the project folder using the following command:
+
 `open index.html`
 
 **4. Search for a GitHub User:**<br/>
